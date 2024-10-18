@@ -1,7 +1,7 @@
 ---
+layout: '../../layouts/blogPostLayout.astro'
 title: 2024年10月
 pubDate: 2024-09-19
-layout: '../../layouts/blogPostLayout.astro'
 ---
 
 
