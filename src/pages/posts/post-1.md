@@ -1,7 +1,13 @@
 ---
 layout: '../../layouts/blogPostLayout.astro'
-title: 2024年10月
-pubDate: 2024-09-19
+title: 'Jamstack Explained'
+pubDate: 2020-12-14
+description: 'Jamstack is not about a specific technology…'
+author: 'Denis Kostrzewa'
+image:
+    url: '<https://bejamas.io/_next/image/?.>..' 
+    alt: 'Jamstack Explained Photo'
+tags: [Typescript, CheatSheet, beginer]    
 ---
 
 

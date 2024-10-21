@@ -5,6 +5,16 @@ const { frontmatter } = Astro.props
 ---
 
 <BaseLayout pageTitle={frontmatter.title}>
-  <h1>{frontmatter.title}</h1>
+  <ul class='tags'>
+    {
+      frontmatter.tags.map((tag) => {
+        return (
+          <li class='tag'>
+            <a href={`/tags/${tag}`}>{tag}</a>
+          </li>
+        )
+      })
+    }
+  </ul>
   <slot />
 </BaseLayout>

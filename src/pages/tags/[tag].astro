@@ -1,0 +1,58 @@
+---
+import type { GetStaticPaths } from 'astro'
+import BaseLayout from '../../layouts/baseLayout.astro'
+
+export const getStaticPaths = (async () => {
+  console.log('getStaticPaths run')
+  // 获取所有文章
+  const allPosts = await Astro.glob('../posts/*.md')
+  // 获取 文章的所有标签
+  const tags = allPosts.map((p) => p.frontmatter.tags)
+  const flatTags = tags.flat()
+  const uinqueTags = [...new Set(flatTags)]
+
+  return uinqueTags.map((tag) => {
+    console.log('getStaticPaths run tag', tag)
+    let filteredPosts = []
+    filteredPosts = allPosts.filter(
+      (post) => post.frontmatter.tags && post.frontmatter.tags.includes(tag)
+    )
+
+    return {
+      params: { tag: tag },
+      props: {
+        posts: filteredPosts,
+      },
+    }
+  })
+
+  // return [
+  //   {
+  //     params: {
+  //       tag: 'vue',
+  //     },
+  //     props: {
+  //       posts: [],
+  //     },
+  //   },
+  // ]
+}) satisfies GetStaticPaths
+// 获取要查看的tag
+const { tag } = Astro.params
+const { posts } = Astro.props
+---
+
+<BaseLayout pageTitle={tag}>
+  <h2>所有包含 {tag} 的文章</h2>
+  <ul class='posts'>
+    {
+      posts.map((p) => {
+        return (
+          <li class='item'>
+            <a href={p.url}>{p.frontmatter.title}</a>
+          </li>
+        )
+      })
+    }
+  </ul>
+</BaseLayout>

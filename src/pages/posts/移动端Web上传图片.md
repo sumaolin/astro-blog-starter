@@ -2,7 +2,7 @@
 layout: '../../layouts/blogPostLayout.astro'
 title: 移动端Web上传图片
 pusData: 2016-04-06 18:04:42
-tags:
+tags: []
 categories: [F2E]
 ---
 最近遇到了移动端图片上传以及上传前对图片的缩放，旋转，裁剪等功能的需求，查看了图片的裁剪和旋转的插件基本上适合PC端交互，只找到了一个 [Cropper](http://fengyuanchen.github.io/cropper/) 还可以，看来有些交互要自己思考设计！

@@ -173,12 +173,6 @@ where ssh // 查看当前的ssh 的路径
 
 1. [使用 Hexo 创建十七蝉的日志 # 如何加入图片](http://blog.shiqichan.com/create-blog-with-hexo/)
 
-   > 本地存储图片，将图片放在 source/images 目录下，然后
-   >
-   > ```![Alt text](/img/QQ截图20160403180630.jpg "测试，本地图片")
-   >
-   > ```
-
 2. [使用七牛为 Hexo 存储图片](http://blog.shiqichan.com/use-qiniu-store-image-for-hexo/)
 
    从上文中找到了 相关的插件 [hexo-qiniu-sync](https://github.com/gyk001/hexo-qiniu-sync), 插件已经更新完善了，所以直接使用该插件了，参考了该插件的文档
