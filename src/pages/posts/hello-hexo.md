@@ -3,7 +3,7 @@ layout: '../../layouts/blogPostLayout.astro'
 title: hello-hexo
 pusData: 2016-02-17 18:03:20
 tags: [heox, blog, node]
-categories: node
+categories: [node]
 ---
 
 一直想弄个自己的博客 记录下自己的技术方面的点点滴滴

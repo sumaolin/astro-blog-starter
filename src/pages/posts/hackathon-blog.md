@@ -3,7 +3,7 @@ layout: '../../layouts/blogPostLayout.astro'
 title: hackathon blog
 pusData: 2016-06-06 16:07:29
 tags: []
-categories:
+categories: []
 ---
 
 报名参加了 [[北京] 6月4号，5号 项目实战之博客系统](https://cnodejs.org/topic/5750d47c491b9c4f36910fe9)，虽然没能按时完成项目，但是还是收获很多的，在这里总结下，同事作为 [hackathon-blog](https://github.com/sumaolin/hackathon-blog) 的readme ，记录下遇到的坑坑坑……
