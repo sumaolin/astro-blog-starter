@@ -37,6 +37,7 @@ export const getStaticPaths = (async () => {
   //   },
   // ]
 }) satisfies GetStaticPaths
+export const prerender = true
 // 获取要查看的tag
 const { tag } = Astro.params
 const { posts } = Astro.props
