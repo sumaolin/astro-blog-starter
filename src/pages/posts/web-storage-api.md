@@ -1,7 +1,7 @@
 ---
 layout: '../../layouts/blogPostLayout.astro'
 title: web storage api
-pusData: 2016-02-24 10:14:24
+pubDate: 2016-02-24 10:14:24
 tags: [F2E, sessionStorage, localStorage, web storage api]
 categories: [F2E]
 ---

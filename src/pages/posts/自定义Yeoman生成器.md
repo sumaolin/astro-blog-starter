@@ -1,7 +1,7 @@
 ---
 layout: '../../layouts/blogPostLayout.astro'
 title: 自定义Yeoman生成器
-pusData: 2016-04-03 07:51:23
+pubDate: 2016-04-03 07:51:23
 tags: [f2e, F2E, node, yeoman, kmapp, generator]
 categories: [node]
 ---

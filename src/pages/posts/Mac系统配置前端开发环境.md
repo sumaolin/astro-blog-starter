@@ -1,7 +1,7 @@
 ---
 layout: '../../layouts/blogPostLayout.astro'
 title: Mac系统配置前端开发环境
-pusData: 2021-08-15 23:01:00
+pubDate: 2021-08-15 23:01:00
 top: 1
 tags: [F2E, Mac, iTerm]
 categories: [F2E, Mac]

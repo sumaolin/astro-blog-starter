@@ -1,11 +1,10 @@
 ---
 layout: '../../layouts/blogPostLayout.astro'
 title: hackathon blog
-pusData: 2016-06-06 16:07:29
+pubDate: 2016-06-06 16:07:29
 tags: []
 categories: []
 ---
-
 报名参加了 [[北京] 6月4号，5号 项目实战之博客系统](https://cnodejs.org/topic/5750d47c491b9c4f36910fe9)，虽然没能按时完成项目，但是还是收获很多的，在这里总结下，同事作为 [hackathon-blog](https://github.com/sumaolin/hackathon-blog) 的readme ，记录下遇到的坑坑坑……
 
 <!-- more -->
@@ -20,22 +19,18 @@ categories: []
 
 #### 1. `express不是内部或外部命令`
 
-  最新express4.0版本中将命令工具分家出来了(项目地址:<https://github.com/expressjs/generator)所以我们还需要安装一个命令工具,命令如下>:
+  最新express4.0版本中将命令工具分家出来了(项目地址:[https://github.com/expressjs/generator)所以我们还需要安装一个命令工具,命令如下](https://github.com/expressjs/generator)%E6%89%80%E4%BB%A5%E6%88%91%E4%BB%AC%E8%BF%98%E9%9C%80%E8%A6%81%E5%AE%89%E8%A3%85%E4%B8%80%E4%B8%AA%E5%91%BD%E4%BB%A4%E5%B7%A5%E5%85%B7,%E5%91%BD%E4%BB%A4%E5%A6%82%E4%B8%8B):
   `npm install -g express-generator`
 
 #### 2. passport & passport-local 的认证问题
 
 ##### 参考
 
-  1. [Easy Node Authentication: Setup and Local](https://scotch.io/tutorials/easy-node-authentication-setup-and-local)
-
-  2. [express-passport-quick-getstarted](https://github.com/rockq-org/express-passport-quick-getstarted)
-
-  3. [使用passportjs进行登录验证](https://segmentfault.com/a/1190000002926232#articleHeader0)
-
-  4. [Express结合Passport实现登陆认证](http://blog.fens.me/nodejs-express-passport/)
-
-  5. [passport doc](http://passportjs.org/docs) 官方文档，先看了几个例子，看完官方文档，豁然开朗了，使用了不同的方法去通过认证
+1. [Easy Node Authentication: Setup and Local](https://scotch.io/tutorials/easy-node-authentication-setup-and-local)
+2. [express-passport-quick-getstarted](https://github.com/rockq-org/express-passport-quick-getstarted)
+3. [使用passportjs进行登录验证](https://segmentfault.com/a/1190000002926232#articleHeader0)
+4. [Express结合Passport实现登陆认证](http://blog.fens.me/nodejs-express-passport/)
+5. [passport doc](http://passportjs.org/docs) 官方文档，先看了几个例子，看完官方文档，豁然开朗了，使用了不同的方法去通过认证
 
 #### 3. `install phantomjs error`
 
@@ -47,23 +42,23 @@ categories: []
 
 ### 相关工具
 
-  1. [redux-devtools-extension](https://github.com/zalmoxisus/redux-devtools-extension)
-  2. [react-devtools](https://github.com/facebook/react-devtools)
+1. [redux-devtools-extension](https://github.com/zalmoxisus/redux-devtools-extension)
+2. [react-devtools](https://github.com/facebook/react-devtools)
 
 ### 资料
 
-  1. [React+Redux系列教程](https://github.com/lewis617/react-redux-tutorial)
-  2. [Redux 中文文档](http://cn.redux.js.org/)
-  3. [文档收集](https://github.com/icefox0801/JSErrorMonitor#应用的框架和库)
+1. [React+Redux系列教程](https://github.com/lewis617/react-redux-tutorial)
+2. [Redux 中文文档](http://cn.redux.js.org/)
+3. [文档收集](https://github.com/icefox0801/JSErrorMonitor#应用的框架和库)
 
 ## 2016-06-06
 
   两天的 hackathon 活动，感觉到自己的不足，要恶补下自己的基础知识了，首先完成这个blog 的认为
 
-  1. passport-local 认证     【**2016-06-08 18:04:17** 完成】
-  2. react & redux 登录注册页面
-  3. blog 编辑器
-  4. blog 列表（编辑删除），tag 功能！
+1. passport-local 认证     【**2016-06-08 18:04:17** 完成】
+2. react & redux 登录注册页面
+3. blog 编辑器
+4. blog 列表（编辑删除），tag 功能！
 
 ## 2016-06-07
 
@@ -73,9 +68,9 @@ categories: []
 
 ### 疑问
 
-  1. chrome plugin Postman 中 body 类型： form-data， x-www-form-urlencoded， raw， binary 的疑问区别
+1. chrome plugin Postman 中 body 类型： form-data， x-www-form-urlencoded， raw， binary 的疑问区别
 
-  > 在hackathon-blog 活动中 推荐使用的postman 并且@hain 演示推荐了 raw 的方式提交数据，回来自己再弄，可是怎么也体检不成功了！一直怀疑自己 body-parse 模块配置有问题，看了下面的文章才豁然开朗
+> 在hackathon-blog 活动中 推荐使用的postman 并且@hain 演示推荐了 raw 的方式提交数据，回来自己再弄，可是怎么也体检不成功了！一直怀疑自己 body-parse 模块配置有问题，看了下面的文章才豁然开朗
 
   [四种常见的 POST 提交数据方式](https://github.com/ilivebox/the-little-mongodb-book/blob/master/zh-cn/mongodb.markdown)
 
@@ -94,25 +89,24 @@ categories: []
 
 ### 已读
 
-  1. [【译】展望2016，React.js 最佳实践 (中英对照版)](https://blog.jimmylv.info/2016-01-22-React.js-Best-Practices-for-2016/)
+1. [【译】展望2016，React.js 最佳实践 (中英对照版)](https://blog.jimmylv.info/2016-01-22-React.js-Best-Practices-for-2016/)
 
-  > 很概况全面的介绍了下 react 中用到的相关技术
+> 很概况全面的介绍了下 react 中用到的相关技术
 
-  2. [如何学习React](https://github.com/petehunt/react-howto/blob/master/README-zh.md)
+2. [如何学习React](https://github.com/petehunt/react-howto/blob/master/README-zh.md)
 
-  > 怎样学习 react 系列
+> 怎样学习 react 系列
 
-  3. [Redux是如何工作的 (一)](http://chatting8.com/?p=883)
+3. [Redux是如何工作的 (一)](http://chatting8.com/?p=883)
 
-  > redux 通过管理state 树来管理 react 组件熟的更新
+> redux 通过管理state 树来管理 react 组件熟的更新
 
-  4. [React知识库内容精选：10篇文章让你迅速了解该框架](http://geek.csdn.net/news/detail/81106)
+4. [React知识库内容精选：10篇文章让你迅速了解该框架](http://geek.csdn.net/news/detail/81106)
 
 ### 未读
 
-  1. 【系列】[和我一起实战react](http://mulgore.github.io/2016/05/23/follow-react-lesson/)
-
-  2. 【系列】[基于CNodeAPI使用react开发一个完整的Web应用](http://mulgore.github.io/2016/06/01/used-CNodeAPI-for-development-of-react-webapp/)
+1. 【系列】[和我一起实战react](http://mulgore.github.io/2016/05/23/follow-react-lesson/)
+2. 【系列】[基于CNodeAPI使用react开发一个完整的Web应用](http://mulgore.github.io/2016/06/01/used-CNodeAPI-for-development-of-react-webapp/)
 
 ## 2016-07-06
 

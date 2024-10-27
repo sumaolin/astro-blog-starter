@@ -1,7 +1,7 @@
 ---
 layout: '../../layouts/blogPostLayout.astro'
 title: readList
-pusData: 2016-04-05 14:39:43
+pubDate: 2016-04-05 14:39:43
 tags: [F2E, 前端, 笔记]
 categories: [ReadList]
 ---

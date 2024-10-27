@@ -1,7 +1,7 @@
 ---
 layout: '../../layouts/blogPostLayout.astro'
 title: webuploader
-pusData: 2016-03-25 18:57:27
+pubDate: 2016-03-25 18:57:27
 tags: [webuploader, F2E, upload]
 categories: [F2E]
 ---

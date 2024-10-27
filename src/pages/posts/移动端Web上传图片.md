@@ -1,7 +1,7 @@
 ---
 layout: '../../layouts/blogPostLayout.astro'
 title: 移动端Web上传图片
-pusData: 2016-04-06 18:04:42
+pubDate: 2016-04-06 18:04:42
 tags: []
 categories: [F2E]
 ---

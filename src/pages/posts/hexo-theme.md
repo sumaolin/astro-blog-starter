@@ -1,7 +1,7 @@
 ---
 layout: '../../layouts/blogPostLayout.astro'
 title: After hello hexo
-pusData: 2016-02-17 18:03:20
+pubDate: 2016-02-17 18:03:20
 tags: [heox, blog, node]
 categories: [node]
 

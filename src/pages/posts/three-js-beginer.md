@@ -1,7 +1,7 @@
 ---
 layout: '../../layouts/blogPostLayout.astro'
 title: three.js beginer
-pusData: 2016-04-28 17:34:00
+pubDate: 2016-04-28 17:34:00
 tags: [canvas, three.js, webGL]
 categories: [F2E, three.js]
 ---

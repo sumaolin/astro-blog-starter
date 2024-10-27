@@ -1,7 +1,7 @@
 ---
 layout: '../../layouts/blogPostLayout.astro'
 title: docker入门
-pusData: 2016-04-25 21:07:46
+pubDate: 2016-04-25 21:07:46
 tags: [docker]
 categories: [docker]
 ---

@@ -1,7 +1,7 @@
 ---
 layout: '../../layouts/blogPostLayout.astro'
 title: React课程学习
-pusData: 2016-07-06 14:38:55
+pubDate: 2016-07-06 14:38:55
 tags: [F2E, React, Redux]
 categories: [F2E, React]
 ---
