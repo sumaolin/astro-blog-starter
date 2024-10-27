@@ -1,41 +1,69 @@
 ---
-import BaseLayout from '../../layouts/baseLayout.astro'
-const allPosts = await Astro.glob('../posts/*.md')
+import BaseLayout from "../../layouts/baseLayout.astro";
+const allPosts = await Astro.glob("../posts/*.md");
 // 获取 文章的所有标签
-const tags = allPosts.map((p) => p.frontmatter.tags)
-const flatTags = tags.flat()
-const uinqueTags = [...new Set(flatTags)]
+const tags = allPosts.map((p) => p.frontmatter.tags);
+const flatTags = tags.flat();
+const uinqueTags = [...new Set(flatTags)];
 ---
 
-<style>
-  a {
-    color: #00539f;
-  }
+<BaseLayout pageTitle="所有标签">
+  <div class="tags-wrapper">
+    <h2 class="tit">所有标签</h2>
+    <ul class="tags">
+      {
+        uinqueTags.map((tag, index) => {
+          return (
+            <li class="tag">
+              <a href={`/tags/${tag}`}>{tag}</a>
+            </li>
+          );
+        })
+      }
+    </ul>
+  </div>
+</BaseLayout>
+<style lang="scss">
+  .tags-wrapper {
+    margin: 80px 20px;
+    .tags {
+      padding: 0;
+      margin: 0;
+      font-size: 16px;
+      .tag {
+        list-style: none;
+        position: relative;
+        font-size: 1em;
+        line-height: 1.6em;
+        height: 1.6em;
+        display: inline-block;
+        padding-left: 2.4em;
+        padding-right: 1.3em;
+        border: dashed 1px #1f0909;
+        border-radius: 0.8em;
 
-  .tags {
-    display: flex;
-    flex-wrap: wrap;
-  }
-
-  .tag {
-    margin: 0.25em;
-    border: dotted 1px #a1a1a1;
-    border-radius: 0.5em;
-    padding: 0.5em 1em;
-    font-size: 1.15em;
-    background-color: #f8fcfd;
+        margin-bottom: 15px;
+        margin-right: 15px;
+        a {
+          color: #1f0909;
+        }
+        &::before {
+          content: "";
+          background-position: center;
+          background-size: contain;
+          background-repeat: no-repeat;
+          width: 1em;
+          height: 1em;
+          position: absolute;
+          top: 50%;
+          left: 0.8em;
+          transform: translateY(-50%);
+          background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyB3aWR0aD0iMTZweCIgaGVpZ2h0PSIxNnB4IiB2aWV3Qm94PSIwIDAgMTYgMTYiIHZlcnNpb249IjEuMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayI+CiAgICA8IS0tIEdlbmVyYXRvcjogU2tldGNoIDUyLjIgKDY3MTQ1KSAtIGh0dHA6Ly93d3cuYm9oZW1pYW5jb2RpbmcuY29tL3NrZXRjaCAtLT4KICAgIDx0aXRsZT5pY29uLXRhZzwvdGl0bGU+CiAgICA8ZGVzYz5DcmVhdGVkIHdpdGggU2tldGNoLjwvZGVzYz4KICAgIDxnIGlkPSJQYWdlLTEiIHN0cm9rZT0ibm9uZSIgc3Ryb2tlLXdpZHRoPSIxIiBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPgogICAgICAgIDxnIGlkPSJEZXNrdG9wIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtMjczLjAwMDAwMCwgLTY4Ny4wMDAwMDApIiBmaWxsPSIjMDAwMDAwIj4KICAgICAgICAgICAgPGcgaWQ9InBvc3QiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDc4LjAwMDAwMCwgNDgzLjAwMDAwMCkiPgogICAgICAgICAgICAgICAgPGcgaWQ9Ikdyb3VwLTYiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDAuMDAwMDAwLCAxOTguMDAwMDAwKSI+CiAgICAgICAgICAgICAgICAgICAgPGcgaWQ9Ikdyb3VwLTUiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDE5My4wMDAwMDAsIDAuMDAwMDAwKSI+CiAgICAgICAgICAgICAgICAgICAgICAgIDxnIGlkPSJUYWcsLWxhYmVsLC1lLWNvbW1lcmNlIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgwLjAwMDAwMCwgNC4wMDAwMDApIj4KICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxnIGlkPSJpY29uLXRhZyI+CiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPHJlY3QgaWQ9IlJlY3RhbmdsZSIgb3BhY2l0eT0iMCIgeD0iMCIgeT0iMCIgd2lkdGg9IjIwIiBoZWlnaHQ9IjIwIj48L3JlY3Q+CiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPHBhdGggZD0iTTE2LjY2NjYsMS45OTk4IEwxMS4xMjQ4LDEuOTk5OCBDMTAuNzU4MiwxLjk5OTggMTAuMjQ1OCwyLjIxMiA5Ljk4NjgsMi40NzEgTDIuMzg5LDEwLjA2OTYgQzEuODcwMiwxMC41ODggMS44NzAyLDExLjQzNjggMi4zODksMTEuOTU1MiBMOC4wNDYyLDE3LjYxMTYgQzguNTYzOCwxOC4xMjk4IDkuNDEyNiwxOC4xMjk4IDkuOTMxLDE3LjYxMTYgTDE3LjUyODgsMTAuMDE1IEMxNy43ODc2LDkuNzU1OCAxOCw5LjI0MjggMTgsOC44NzcgTDE4LDMuMzMzMiBDMTgsMi42MDA4IDE3LjM5OTgsMS45OTk4IDE2LjY2NjYsMS45OTk4IFogTTE2LjY2NjYsOC45OTA4IEw4Ljk4ODIsMTYuNjY4OCBMMy4zMzE4LDExLjAxMjQgTDcuMzY2NCw2Ljk3NzIgQzkuMjY0Miw1LjA4IDEwLjM0OCwzLjk5NiAxMC45NjcyLDMuMzMzMiBMMTYuNjY2NiwzLjMzMzIgTDE2LjY2NjYsOC45OTA4IFogTTE1LjMzMzQsNi4wMDA0IEMxNS4zMzM0LDYuNzM2MiAxNC43MzYyLDcuMzMzOCAxMy45OTk4LDcuMzMzOCBDMTMuMjYzNCw3LjMzMzggMTIuNjY2NCw2LjczNjIgMTIuNjY2NCw2LjAwMDQgQzEyLjY2NjQsNS4yNjM0IDEzLjI2MzQsNC42NjcgMTMuOTk5OCw0LjY2NyBDMTQuNzM2Miw0LjY2NyAxNS4zMzM0LDUuMjYzNiAxNS4zMzM0LDYuMDAwNCBaIiBmaWxsLXJ1bGU9Im5vbnplcm8iPjwvcGF0aD4KICAgICAgICAgICAgICAgICAgICAgICAgICAgIDwvZz4KICAgICAgICAgICAgICAgICAgICAgICAgPC9nPgogICAgICAgICAgICAgICAgICAgIDwvZz4KICAgICAgICAgICAgICAgIDwvZz4KICAgICAgICAgICAgPC9nPgogICAgICAgIDwvZz4KICAgIDwvZz4KPC9zdmc+);
+        }
+        &:hover {
+          background-color: #86909c;
+        }
+      }
+    }
   }
 </style>
-<BaseLayout pageTitle='所有标签'>
-  <ul class='tags'>
-    {
-      uinqueTags.map((tag) => {
-        return (
-          <li class='tag'>
-            <a href={`/tags/${tag}`}>{tag}</a>
-          </li>
-        )
-      })
-    }
-  </ul>
-</BaseLayout>
