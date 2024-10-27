@@ -1,5 +1,25 @@
 ---
-
+import LineBar from "./LineBar.astro";
 ---
 
-<div>copyright@2024</div>
+<style is:global>
+  .footer {
+    margin-bottom: 100px;
+  }
+  .copyright {
+    margin: 5px 0;
+    text-align: center;
+  }
+</style>
+
+<div class="footer">
+  <LineBar>
+    <p class="copyright">
+      本站由
+      <a href="/">sumaolin</a>
+       使用
+      <a target="_blank" rel="noopener" href="astr">Astro</a>
+       创建。 Copyright@2024
+    </p>
+  </LineBar>
+</div>

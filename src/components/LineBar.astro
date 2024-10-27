@@ -1,0 +1,52 @@
+---
+
+---
+
+<style is:global>
+  .location-bar {
+    position: relative;
+  }
+
+  .location-bar .line-1 {
+    margin-bottom: 2px;
+  }
+
+  .location-bar .text {
+    text-align: center;
+    font-size: 1.4rem;
+    line-height: 2.2rem;
+    margin: 0.2em 0;
+    padding: 0 4rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  .location-bar .line-1,
+  .location-bar .line-2,
+  .location-bar .line-3,
+  .location-bar .line-4 {
+    background: #333;
+  }
+  .location-bar .line-4 {
+    margin-top: 2px;
+  }
+</style>
+<div class="location-bar">
+  <div class="line-1">
+    <div class="horizontal-line" style="height: 3px"></div>
+  </div>
+  <div class="line-2">
+    <div class="horizontal-line" style="height: 1px"></div>
+  </div>
+
+  <div class="slot-c">
+    <slot />
+  </div>
+  <div class="line-3">
+    <div class="horizontal-line" style="height: 1px"></div>
+  </div>
+  <div class="line-4">
+    <div class="horizontal-line" style="height: 3px"></div>
+  </div>
+</div>
