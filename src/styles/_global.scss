@@ -1,9 +1,11 @@
-.wrap{
+.wrap {
   margin: 80px 20px;
 }
 .post-info {
   margin-top: 20px;
   margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
   .tags,
   .date {
     position: relative;
@@ -14,7 +16,7 @@
 
   .tags::before,
   .date::before {
-    content: "";
+    content: '';
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;

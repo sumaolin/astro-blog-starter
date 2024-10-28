@@ -1,29 +1,29 @@
 ---
-import BaseLayout from "../../layouts/baseLayout.astro";
-const allPosts = await Astro.glob("../posts/*.md");
+import BaseLayout from '../../layouts/baseLayout.astro'
+const allPosts = await Astro.glob('../posts/*.md')
 // 获取 文章的所有标签
-const tags = allPosts.map((p) => p.frontmatter.tags);
-const flatTags = tags.flat();
-const uinqueTags = [...new Set(flatTags)];
+const tags = allPosts.map((p) => p.frontmatter.tags)
+const flatTags = tags.flat()
+const uinqueTags = [...new Set(flatTags)]
 ---
 
-<BaseLayout pageTitle="所有标签">
-  <div class="tags-wrapper">
-    <h2 class="tit">所有标签</h2>
-    <ul class="tags">
+<BaseLayout pageTitle='所有标签'>
+  <div class='tags-wrapper'>
+    <h2 class='tit'>所有标签</h2>
+    <ul class='tags'>
       {
         uinqueTags.map((tag, index) => {
           return (
-            <li class="tag">
+            <li class='tag'>
               <a href={`/tags/${tag}`}>{tag}</a>
             </li>
-          );
+          )
         })
       }
     </ul>
   </div>
 </BaseLayout>
-<style lang="scss">
+<style lang='scss'>
   .tags-wrapper {
     margin: 80px 20px;
     .tags {
@@ -48,7 +48,7 @@ const uinqueTags = [...new Set(flatTags)];
           color: #1f0909;
         }
         &::before {
-          content: "";
+          content: '';
           background-position: center;
           background-size: contain;
           background-repeat: no-repeat;
