@@ -1,31 +1,31 @@
 ---
-import LineBar from "./LineBar.astro";
+import LineBar from './LineBar.astro'
 ---
 
-<div class="head">
-  <div class="head__inner">
-    <h1><a href="/">苏茂林</a></h1>
-    <p class="text">Kevin.Su's Blog | 关于前端技术！</p>
+<div class='head'>
+  <div class='head__inner'>
+    <h1><a href='/'>苏茂林</a></h1>
+    <p class='text'>Kevin.Su's Blog | 关于前端技术！</p>
   </div>
 </div>
 
 <LineBar>
-  <div class="navbar">
-    <nav class="post">
-      <a href="/">首页</a>
-      <a href="/blog">归档</a>
-      <a href="/tags">标签</a>
-      <a href="/about">关于</a>
-      <a href="/rss.xml">RSS</a>
+  <div class='navbar'>
+    <nav class='post'>
+      <a href='/'>首页</a>
+      <a href='/blog'>归档</a>
+      <a href='/tags'>标签</a>
+      <a href='/about'>关于</a>
+      <a href='/rss.xml' target='_blank'>RSS</a>
     </nav>
   </div>
-  <div class="switch-button">
+  <div class='switch-button'>
     <input
-      class="container_toggle"
-      type="checkbox"
-      id="switch"
-      name="mode"
-    /><label for="switch">Toggle</label>
+      class='container_toggle'
+      type='checkbox'
+      id='switch'
+      name='mode'
+    /><label for='switch'>Toggle</label>
   </div>
 </LineBar>
 
@@ -66,7 +66,7 @@ import LineBar from "./LineBar.astro";
     height: 0;
   }
 
-  .switch-button input[type="checkbox"] {
+  .switch-button input[type='checkbox'] {
     height: 0;
     width: 0;
     visibility: hidden;
@@ -91,7 +91,7 @@ import LineBar from "./LineBar.astro";
   }
 
   .switch-button label:after {
-    content: "";
+    content: '';
     background: #fff;
     width: 1rem;
     height: 1rem;
@@ -175,7 +175,7 @@ import LineBar from "./LineBar.astro";
     pointer-events: none;
   }
   .navbar nav a.active:after {
-    content: "";
+    content: '';
   }
   .navbar nav a + a {
     margin-left: 4px;
