@@ -2,8 +2,8 @@
 layout: '../../layouts/blogPostLayout.astro'
 title: koa begainer
 pubDate: 2016-05-10 18:48:41
-tags: [Nodejs, koa]
-categories: [Nodejs]
+tags: [Node, Koa]
+categories: [Node]
 ---
 
 想学习下后端的Node or Koa 相关的知识，目标能实现开发，从一个个网上的例子的一行行代码开始敲起！

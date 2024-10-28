@@ -1,11 +1,11 @@
 ---
 layout: '../../layouts/blogPostLayout.astro'
-title: docker入门
+title: Docker入门
 pubDate: 2016-04-25 21:07:46
-tags: [docker]
-categories: [docker]
+tags: [Docker]
+categories: [Docker]
 ---
-docker 入门使用
+Docker 入门使用
 <!-- more -->
 # 入门资料
 

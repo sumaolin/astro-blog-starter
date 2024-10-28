@@ -1,11 +1,11 @@
 ---
 layout: '../../layouts/blogPostLayout.astro'
-title: three.js beginer
+title: Three.js Beginer
 pubDate: 2016-04-28 17:34:00
-tags: [canvas, three.js, webGL]
-categories: [F2E, three.js]
+tags: [Canvas, Three.js, WebGL]
+categories: [F2E, Three.js]
 ---
-three.js 相关的收集资料
+Three.js 相关的收集资料
 <!-- more -->
 ## 2016-04-28 17:36
 

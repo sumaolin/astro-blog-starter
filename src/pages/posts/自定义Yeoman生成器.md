@@ -2,8 +2,8 @@
 layout: '../../layouts/blogPostLayout.astro'
 title: 自定义Yeoman生成器
 pubDate: 2016-04-03 07:51:23
-tags: [f2e, F2E, node, yeoman, kmapp, generator]
-categories: [node]
+tags: [前端, F2E, Node, yeoman, kmapp, generator]
+categories: [Node]
 ---
 
 年前整理的一篇文章：[自定义Yeoman生成器 —— JSCON-简时空](http://www.jscon.co/coding/frontend/yeoman_generator.html), 因为原链接的可读性太差，就通过MarkDown语法重新整理了下，根据该文章 构建了自己的yeoman generator ：[generator-kmapp](https://github.com/sumaolin/generator-kmapp), 只是简单的实现了模板复制，安装bower , 和npm 依赖模块的功能，这样实现一键构建业务中的开发环境：本地服务器，自动刷新，less自动编译，接口转发等功能。
