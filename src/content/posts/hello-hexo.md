@@ -1,5 +1,4 @@
 ---
-layout: '../../layouts/blogPostLayout.astro'
 title: hello-hexo
 pubDate: 2016-02-17 18:03:20
 tags: [Hexo, blog, Node]

@@ -1,5 +1,4 @@
 ---
-layout: '../../layouts/blogPostLayout.astro'
 title: 移动端Web上传图片
 pubDate: 2016-04-06 18:04:42
 tags: [F2E, 前端]

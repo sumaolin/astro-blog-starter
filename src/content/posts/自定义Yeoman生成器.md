@@ -1,5 +1,4 @@
 ---
-layout: '../../layouts/blogPostLayout.astro'
 title: 自定义Yeoman生成器
 pubDate: 2016-04-03 07:51:23
 tags: [前端, F2E, Node, yeoman, kmapp, generator]
@@ -387,7 +386,7 @@ generators.Base.extend({
     this.fs.copyTpl(
       this.templatePath('index.html'),
       this.destinationPath('public/index.html'),
-      { layout: '../../layouts/blogPostLayout.astro'
+      { 
 title: 'Templating with Yeoman' }
     );
   }

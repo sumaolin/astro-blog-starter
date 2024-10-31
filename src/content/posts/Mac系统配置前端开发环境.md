@@ -1,5 +1,4 @@
 ---
-layout: '../../layouts/blogPostLayout.astro'
 title: Mac系统配置前端开发环境
 pubDate: 2021-08-15 23:01:00
 top: 1

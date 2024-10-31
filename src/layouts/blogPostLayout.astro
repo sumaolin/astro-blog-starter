@@ -29,7 +29,8 @@ const { frontmatter } = Astro.props
 
       <div class='post-info'>
         <span class='data-wrap'>
-          更新时间：<span class='date'>{frontmatter.pubDate.split('T')[0]}</span
+          更新时间：<span class='date'
+            >{frontmatter.pubDate.toISOString().split('T')[0]}</span
           >
         </span>
         <span class='tags-wrap'>

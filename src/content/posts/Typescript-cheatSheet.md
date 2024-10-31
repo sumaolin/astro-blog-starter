@@ -1,5 +1,4 @@
 ---
-layout: '../../layouts/blogPostLayout.astro'
 title: Typescript cheatSheet
 pubDate: 2018-12-31 17:34:14
 tags: [Typescript, CheatSheet, Beginer]

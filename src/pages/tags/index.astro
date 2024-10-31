@@ -1,8 +1,9 @@
 ---
+import { getCollection } from 'astro:content'
 import BaseLayout from '../../layouts/baseLayout.astro'
-const allPosts = await Astro.glob('../posts/*.md')
+const allPosts = await getCollection('posts')
 // 获取 文章的所有标签
-const tags = allPosts.map((p) => p.frontmatter.tags)
+const tags = allPosts.map((p) => p.data.tags)
 const flatTags = tags.flat()
 const uinqueTags = [...new Set(flatTags)]
 ---

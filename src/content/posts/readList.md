@@ -1,5 +1,4 @@
 ---
-layout: '../../layouts/blogPostLayout.astro'
 title: readList
 pubDate: 2016-05-06 14:39:43
 tags: [F2E, 前端, 笔记]

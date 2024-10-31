@@ -1,5 +1,4 @@
 ---
-layout: '../../layouts/blogPostLayout.astro'
 title: webuploader
 pubDate: 2016-03-25 18:57:27
 tags: [Webuploader, F2E, Upload]

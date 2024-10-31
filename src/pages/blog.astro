@@ -1,11 +1,12 @@
 ---
-import PostList from "../components/PostList.astro";
-import BaseLayout from "../layouts/baseLayout.astro";
-const allPosts = await Astro.glob("./posts/*.md");
+import { getCollection } from 'astro:content'
+import PostList from '../components/PostList.astro'
+import BaseLayout from '../layouts/baseLayout.astro'
+const allPosts = await getCollection('posts')
 ---
 
-<BaseLayout pageTitle="博客">
-  <div class="wrap">
+<BaseLayout pageTitle='博客'>
+  <div class='wrap'>
     <h2>归档文章</h2>
     <PostList arrPost={allPosts} />
   </div>

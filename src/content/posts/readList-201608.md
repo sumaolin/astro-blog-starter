@@ -1,5 +1,4 @@
 ---
-layout: '../../layouts/blogPostLayout.astro'
 title: readList 201608
 pubDate: 2016-08-08 14:59:02
 tags: [ReadList]

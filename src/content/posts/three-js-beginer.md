@@ -1,5 +1,4 @@
 ---
-layout: '../../layouts/blogPostLayout.astro'
 title: Three.js Beginer
 pubDate: 2016-04-28 17:34:00
 tags: [Canvas, Three.js, WebGL]

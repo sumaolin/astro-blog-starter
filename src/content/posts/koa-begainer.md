@@ -1,5 +1,4 @@
 ---
-layout: '../../layouts/blogPostLayout.astro'
 title: koa begainer
 pubDate: 2016-05-10 18:48:41
 tags: [Node, Koa]

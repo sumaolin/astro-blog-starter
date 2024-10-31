@@ -1,5 +1,4 @@
 ---
-layout: '../../layouts/blogPostLayout.astro'
 title: hackathon blog
 pubDate: 2016-06-06 16:07:29
 tags: [React]

@@ -1,18 +1,20 @@
 ---
-const { arrPost } = Astro.props;
+const { arrPost } = Astro.props
 ---
 
-<ul class="posts">
+<ul class='posts'>
   {
     arrPost.map((post) => (
-      <li class="item post-info">
-        <span class="date">{post.frontmatter.pubDate.split("T")[0]}</span>
-        <a href={post.url}>{post.frontmatter.title}</a>
+      <li class='item post-info'>
+        <span class='date'>
+          {post.data.pubDate.toISOString().split('T')[0]}
+        </span>
+        <a href={`/posts/${post.slug}`}>{post.data.title}</a>
       </li>
     ))
   }
 </ul>
-<style lang="scss" is:global>
+<style lang='scss' is:global>
   .posts {
     // margin: 0;
     padding: 0;

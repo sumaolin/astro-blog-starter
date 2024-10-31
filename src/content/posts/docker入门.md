@@ -1,5 +1,4 @@
 ---
-layout: '../../layouts/blogPostLayout.astro'
 title: Docker入门
 pubDate: 2016-04-25 21:07:46
 tags: [Docker]
