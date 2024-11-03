@@ -15,6 +15,9 @@ export async function GET(context) {
         link: `/posts/${post.slug}`,
       }
     }),
-    customData: `<language>en-us</language>`,
+    customData: `<follow_challenge>
+    <feedId>75734723493321728</feedId>
+    <userId>56511812446671872</userId>
+</follow_challenge>`,
   })
 }
