@@ -1,4 +1,5 @@
 ---
+import { fade } from 'astro:transitions'
 import BaseLayout from './baseLayout.astro'
 
 const { frontmatter } = Astro.props
@@ -21,7 +22,7 @@ const { frontmatter } = Astro.props
   }
 </style>
 <BaseLayout pageTitle={frontmatter.title}>
-  <div class='post-container'>
+  <div class='post-container' transition:animate={fade({ duration: '2s' })}>
     <div class='post-header'>
       <h1 class='tit'>
         {frontmatter.title}
